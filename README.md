@@ -92,8 +92,8 @@ There is directory at root level of the project named `specs`. This directory co
 ###  iOS
 |  |  |   |  |  |
 | ------- | ------- | ------- | ------- | ------- |
-| ![App Screenshot](./demo/homePage.png) | ![App Screenshot](./demo/productDetail.png) | ![App Screenshot](./demo/cartPage.png) | ![App Screenshot](./demo/search.png) | ![App Screenshot](./demo/confirmationPage.png) |
+| ![App Screenshot](./demo/iosHome.png) | ![App Screenshot](./demo/productDetail.png) | ![App Screenshot](./demo/cartPage.png) | ![App Screenshot](./demo/search.png) | ![App Screenshot](./demo/confirmationPage.png) |
 ### 📲 Android
 |  |  |   |  |  |
 | ------- | ------- | ------- | ------- | ------- |
-| ![App Screenshot](./demo/androidHomePage.png) | ![App Screenshot](./demo/androidDetailPage.png) | ![App Screenshot](./demo/androidCartPage.png) | ![App Screenshot](./demo/androidSearch.png) | ![App Screenshot](./demo/androidConfirmationPage.png) |
+| ![App Screenshot](./demo/home.png) | ![App Screenshot](./demo/androidDetailPage.png) | ![App Screenshot](./demo/androidCartPage.png) | ![App Screenshot](./demo/androidSearch.png) | ![App Screenshot](./demo/androidConfirmationPage.png) |
