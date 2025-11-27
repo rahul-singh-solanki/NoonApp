@@ -83,11 +83,6 @@ src/
 | utils | The utils directory contains utility method used inside app i.e. \`date\`, \`platform\` and \`string constants\`. |
 
 
-
-### 🚀 NativeFileView TurboModule
----
-There is directory at root level of the project named `specs`. This directory contains a `TurboModule` spec declaration that is implemented in Android for view `PDF/Image` file.
-
 ## 📺 Demo
 ###  iOS
 |  |  |   |  |  |
