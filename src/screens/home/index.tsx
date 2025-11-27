@@ -56,7 +56,13 @@ const Home: HomeScreen = ({ navigation }) => {
     )
   }, [])
   
-  const renderItem = useCallback<ListRenderItem<Product>>(({ item }) => <Product product={item} />, [])
+  const renderItem = useCallback<ListRenderItem<Product>>(({ item }) => {
+    return (
+      <View style={styles.contentContainer}>
+        <Product product={item} />
+      </View>
+    )
+  }, [])
 
   const listFooterComponent = useMemo(() => (
     <ActivityIndicator animating={isFetching} size='large' />
@@ -86,7 +92,6 @@ const Home: HomeScreen = ({ navigation }) => {
         ItemSeparatorComponent={ItemSeparator}
         onEndReachedThreshold={0.2}
         onEndReached={onEndReached}
-        contentContainerStyle={styles.contentContainer}
         ListFooterComponent={listFooterComponent}
         refreshing={isRefetching}
         onRefresh={refetch}
@@ -98,8 +103,7 @@ const Home: HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {},
   contentContainer: {
-    // padding: scale(16),
-    // paddingBottom: scale(32),
+    paddingHorizontal: scale(16),
   },
   searchIconContainer: {
     marginRight: scale(10),

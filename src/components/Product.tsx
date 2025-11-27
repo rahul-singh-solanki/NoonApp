@@ -53,6 +53,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: Colors.background.default,
     elevation: 2,
+    shadowColor: Colors.shadow.primary,
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
   },
   image: {
     alignSelf: 'center',
