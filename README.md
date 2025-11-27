@@ -1,34 +1,26 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [\`@react-native-community/cli\`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## Step 1: Start Metro
+## Step 1: Install Node Modules
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+First, you will need to install **Node Modules**.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+To install the __node_modules__, run the following command from the root of your React Native project:
 
 ```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+yarn
 ```
 
 ## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Once you have installed \`node_modules\` you can run below command to build and run your app on your connected device or emulator.
 
 ### Android
 
 ```sh
-# Using npm
-npm run android
-
-# OR using Yarn
 yarn android
 ```
 
@@ -57,41 +49,51 @@ npm run ios
 # OR using Yarn
 yarn ios
 ```
+# Project Structure
+Below directory structure is followed in the project.
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+```
+src/
+├── assets
+│   ├── fonts
+│   └── img
+├── api
+├── components
+├── hooks
+├── navigator
+├── queries
+├── screens
+├── store
+├── theme
+├── types
+└── utils
+```
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+| Directory | Details |
+| ------- | ------- |
+| assets | Asset directory contains images, json, fonts files used in the project. |
+| components | The components directory contains reusable components used in the project. |
+| queries | The queries directory contains API call logic and data fetching hooks using \`react-query\`. |
+| hooks | Hooks directory contains all the reusable hooks i.e. \`useAppDispatch\`, \`useAppSelector\` |
+| navigator | Navigator directory contains router logic and screen declaration using \`react-navigation\` library. |
+| screens | The screens directory contains implementation of the screens declared in navigator. |
+| store | The store directory contains \`slice\` and store configuration. \`Slices\` exported their \`reducer\` & \`actions\` for uses in the code. |
+| theme | The theme directory has files related to text configuration, sizes, font and colors used through out the app. These are defined to have consistent design system in the app. |
+| types | The types directory contains \`typescript\` declaration using \`.ts\` & \`.d.ts\`. It has \`react-navigation\` type safety declarations as well. |
+| utils | The utils directory contains utility method used inside app i.e. \`date\`, \`platform\` and \`string constants\`. |
 
-## Step 3: Modify your app
 
-Now that you have successfully run the app, let's make changes!
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+### 🚀 NativeFileView TurboModule
+---
+There is directory at root level of the project named `specs`. This directory contains a `TurboModule` spec declaration that is implemented in Android for view `PDF/Image` file.
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 📺 Demo
+###  iOS
+|  |  |   |  |  |
+| ------- | ------- | ------- | ------- | ------- |
+| ![App Screenshot](./demo/homePage.png) | ![App Screenshot](./demo/productDetail.png) | ![App Screenshot](./demo/cartPage.png) | ![App Screenshot](./demo/search.png) | ![App Screenshot](./demo/confirmationPage.png) |
+### 📲 Android
+|  |  |   |  |  |
+| ------- | ------- | ------- | ------- | ------- |
+| ![App Screenshot](./demo/androidHomePage.png) | ![App Screenshot](./demo/androidDetailPage.png) | ![App Screenshot](./demo/androidCartPage.png) | ![App Screenshot](./demo/androidSearch.png) | ![App Screenshot](./demo/androidConfirmationPage.png) |
